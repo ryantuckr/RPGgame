@@ -82,7 +82,7 @@ $(document).ready(function () {
         if (selectedUnit === "Archer" && computerUnit === "Mage") {
             var a = 90 - archerAttackDmg;
             console.log("updated mage hp" + a);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + archerAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + archerAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#mageHp').html(a);
             
@@ -95,7 +95,7 @@ $(document).ready(function () {
         if (selectedUnit === "Archer" && computerUnit === "Warrior") {
             var b = 240 - archerAttackDmg;
             console.log("updated warrior hp" + b);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + archerAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + archerAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#warriorHp').html(b);
         }
@@ -119,7 +119,7 @@ $(document).ready(function () {
         if (selectedUnit === "Mage" && computerUnit === "Archer") {
             var d = 150 - mageAttackDmg;
             console.log("updated mage hp" + d);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + mageAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + mageAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#arhcerHp').html(d);
         }
@@ -131,7 +131,7 @@ $(document).ready(function () {
         if (selectedUnit === "Mage" && computerUnit === "Warrior") {
             var e = 240 - mageAttackDmg;
             console.log("updated warrior hp" + e);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + mageAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + mageAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#warriorHp').html(e);
         }
@@ -154,7 +154,7 @@ $(document).ready(function () {
         if (selectedUnit === "Warrior" && computerUnit === "Archer") {
             var g = 150 - warriorAttackDmg;
             console.log("updated archer hp" + g);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + warriorAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + warriorAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#archerHp').html(g);
         }
@@ -177,7 +177,7 @@ $(document).ready(function () {
         if (selectedUnit === "Warrior" && computerUnit === "Mage") {
             var i = 90 - warriorAttackDmg;
             console.log("updated mage hp" + i);
-            $('#battleLog').append(now + selectedUnit + ' has attacked ' + computerUnit + " for " + warriorAttackDmg);
+            $('#battleLog').append(now + userName + ' has attacked ' + computerUnit + " for " + warriorAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#mageHp').html(i);
         }
@@ -192,7 +192,7 @@ $(document).ready(function () {
         if (computerUnit === "Archer" && selectedUnit === "Mage") {
             var j = 90 - archerAttackDmg;
             console.log("updated mage hp" + j);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + archerAttackDmg);
+            $('#battleLog').append(now + computerUnit + ' has attacked ' + userName + " for " + archerAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#mageHp').html(j);
         }
@@ -204,7 +204,7 @@ $(document).ready(function () {
         if (computerUnit === "Archer" && selectedUnit === "Warrior") {
             var k = 240 - archerAttackDmg;
             console.log("updated warrior hp" + k);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + archerAttackDmg);
+            $('#battleLog').append(now + computerUnit + ' has attacked ' + userName + " for " + archerAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#warriorHp').html(k);
         }
@@ -227,7 +227,7 @@ $(document).ready(function () {
         if (computerUnit === "Mage" && selectedUnit === "Archer") {
             var m = 150- mageAttackDmg;
             console.log("updated mage hp" + m);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + mageAttackDmg);
+            $('#battleLog').append(now + computerUnit + ' has attacked ' + userName + " for " + mageAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#archerHp').html(m);
         }
@@ -239,7 +239,7 @@ $(document).ready(function () {
         if (computerUnit === "Mage" && selectedUnit === "Warrior") {
             var n = 240 - mageAttackDmg;
             console.log("updated warrior hp" + n);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + mageAttackDmg);
+            $('#battleLog').append(now + computerUnit + ' has attacked ' + userName + " for " + mageAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#warriorHp').html(n);
         }
@@ -262,7 +262,7 @@ $(document).ready(function () {
         if (computerUnit === "Warrior" && selectedUnit === "Archer") {
             var p = 150 - warriorAttackDmg;
             console.log("updated archer hp" + p);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + warriorAttackDmg);
+            $('#battleLog').append(now + computerUnit + ' has attacked ' + userName + " for " + warriorAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#archerHp').html(p);
         }
@@ -284,7 +284,7 @@ $(document).ready(function () {
         if (computerUnit === "Warrior" && selectedUnit === "Mage") {
             var q = 90 - warriorAttackDmg;
             console.log("updated mage hp" + i);
-            $('#battleLog').append(now + computerUnit + ' has attacked ' + selectedUnit + " for " + warriorAttackDmg);
+            $("#battleLog").append(now + computerUnit + ' has attacked ' + userName +  ' for '  + warriorAttackDmg);
             $("#battleLog").append( $("<p>").text("") );
             $('#mageHp').html(q);
         }
